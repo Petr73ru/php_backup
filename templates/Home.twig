@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">Primary title<h2 class="sybtitle">Primary subtitle</h2></h1>
+                </div>
+            </div>
+        </section>
+        <div class="card" style="max-width:300px;margin:20px auto;">
+            <div class="card-content">
+                <form action="/login" method="POST">
+                    <label class="label">E-mai</label>
+                    <input class="input" name="email" type="text" value=""/>
+                    <label class="label">Password</label>
+                    <input class="input" name="password" type="password" value=""/>
+                    <input class="button is-light" type="submit" value="Log in" style="width:100%;margin-top:20px;"/>
+                </form>
+            </div>
+        </div>
+</html>
+<!--
+TODO:
++ db query checker
++ save new user with
+  password hash
++ appropriate response
+
+- frond-end
+-->
